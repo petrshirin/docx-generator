@@ -1,7 +1,7 @@
 import os
 from time import sleep
 
-DIR_PATH = 'C://Users//peshi\PycharmProjects//DocxEditor//Послужные карты, для курсантов//1 взвод'
+DIR_PATH = './/Послужные карты, для курсантов//1 взвод'
 
 if __name__ == '__main__':
     file_names = []
