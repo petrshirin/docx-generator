@@ -156,7 +156,7 @@ def create_help_cards(template: str, data_file: str = DATA_FILES[0], dir_to_save
             docx_file = create_docx_file_by_template(
                 DIR_PATH,
                 template)
-            values = [row['ФИОдат'], row['ВТП'], NUMBER_MARK_TO_WORD.get(row['Итог'], 'удовлетворительно')]
+            values = [row['ФИОдат'], row['ВТП'], row['Итог']]
             i = 0
             for paragraph in docx_file.paragraphs:
                 if i > len(values):
