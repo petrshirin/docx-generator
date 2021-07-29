@@ -132,7 +132,7 @@ def create_posluj_cards(template: str, data_file: str = DATA_FILES[0], dir_to_sa
             update_cell_value(docx_file, 0, 3, 0, row['Место рождения'], 1)
             update_cell_value(docx_file, 0, 4, 0, 'русский', 5)
             update_cell_value(docx_file, 0, 5, 1,
-                              f'ФГБОУ ВО "Иркутский Государственный университет", {row["Год_окончания_учебы"]}', 1)
+                              f'ФГБОУ ВО "Иркутский государственный университет", {row["Год_окончания_учебы"]}', 1)
             update_cell_value(docx_file, 0, 7, 2, [row['Серия'], row['Номер'], row['Дата выдачи'], row['Кем выдан']], 6)
             update_cell_value(docx_file, 0, 12, 1, row['ИНН'], 1)
             update_cell_value(docx_file, 1, 0, 1, row['ВК'], 1)
